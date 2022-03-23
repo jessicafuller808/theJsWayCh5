@@ -70,3 +70,28 @@ console.log(calculate(4, "+", 6));  // Must show 10
 console.log(calculate(4, "-", 6));  // Must show -2
 console.log(calculate(2, "*", 0));  // Must show 0
 console.log(calculate(12, "/", 0)); // Must show Infinity
+
+//----------------------------------------------------------------------------
+
+// == Circumfrence and area of a Circle ==
+//Write a program containing two functions to calculate the circumference and area of a circle defined by its radius. Test it using user input.
+//The value of number π (Pi) is obtained with Math.PI in JavaScript.
+//You might want to use the exponentiation operator ** to perform computations.
+
+// C = 2πr
+// A = πr2
+
+let radius = prompt('What is the radius?');
+
+function circleCircumference() {
+  let circumference = 2 * Math.PI * radius;
+  console.log('Circumference: ' + circumference);
+}
+
+function circleArea() {
+  let area = Math.PI * radius ** 2;
+  console.log('Area: ' + area);
+}
+
+circleCircumference();
+circleArea();
